@@ -41,7 +41,7 @@ Current requirements are:
 * **GNU/Linux**, **macOS** or **FreeBSD**
 * zlib dev package (e.g. zlib1g-dev on Debian-based distros)
 * Optionally: Zstandard dev package (e.g. libzstd-dev on Debian-based distros). Zstandard is optional but recommended in order to minimize SPX's overhead.
-* PHP 7.0 to 8.4. PHP 5.x (starting from 5.4) is supported by SPX 0.4.x and earlier versions.
+* PHP 7.0 to 8.5. PHP 5.x (starting from 5.4) is supported by SPX 0.4.x and earlier versions.
 
 ## Installation
 
