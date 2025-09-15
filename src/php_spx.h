@@ -31,8 +31,9 @@
 #   error "Only x86-64 and ARM64 architectures are supported"
 #endif
 
-#if ZEND_MODULE_API_NO < 20100525 || ZEND_MODULE_API_NO > 20240924
-#   error "Only the following PHP versions are supported: 5.4 to 8.4"
+/* FIXME this is not the final value of PHP8.5's ZEND_MODULE_API_NO */
+#if ZEND_MODULE_API_NO < 20100525 || ZEND_MODULE_API_NO > 20240925
+#   error "Only the following PHP versions are supported: 5.4 to 8.5"
 #endif
 
 #define PHP_SPX_EXTNAME "SPX"
