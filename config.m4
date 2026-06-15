@@ -44,8 +44,8 @@ if test "$PHP_SPX" = "yes"; then
 
     php_ver_num=$(echo $PHP_VERSION | awk -F. '{printf("%d%02d%02d",$1,$2,$3)}')
     if test "$php_ver_num" -ge 80200; then
-        CFLAGS="$CFLAGS -std=c11"
-        AC_MSG_NOTICE([Adding -std=c11 because PHP >= 8.2])
+        CFLAGS="$CFLAGS -std=gnu11"
+        AC_MSG_NOTICE([Adding -std=gnu11 because PHP >= 8.2 (GNU typeof needed by Zend headers)])
     else
         CFLAGS="$CFLAGS -std=gnu90"
         AC_MSG_NOTICE([Adding -std=gnu90 because PHP < 8.2])
