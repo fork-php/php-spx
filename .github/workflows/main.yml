@@ -12,6 +12,7 @@ on:
   pull_request:
     branches:
       - master
+      - 'v[0-9]*'
 
 jobs:
   build:
