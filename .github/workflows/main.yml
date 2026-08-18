@@ -35,7 +35,6 @@ jobs:
           - { name: debian, ts: 'nts', compiler: 'gcc',   os: ubuntu-24.04 }
           # macOS
           - { name: mac,    ts: 'nts', compiler: 'clang', os: macos-15 }
-        exclude:
     env:
       DOCKER_BUILD_RECORD_UPLOAD: false   # disable docker buildx record upload as build artifact
       DOCKER_BUILD_SUMMARY: false         # disable docker buildx summary
