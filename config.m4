@@ -42,7 +42,7 @@ if test "$PHP_SPX" = "yes"; then
         AC_MSG_NOTICE([Skipping -march=native in CI])
     fi
 
-    php_ver_num=$(echo $PHP_VERSION | awk -F. '{printf("%d%02d%02d",$1,$2,$3)}')
+    php_ver_num=$($PHP_CONFIG --vernum)
     if test "$php_ver_num" -ge 80200; then
         CFLAGS="$CFLAGS -std=gnu11"
         AC_MSG_NOTICE([Adding -std=gnu11 because PHP >= 8.2 (GNU typeof needed by Zend headers)])
